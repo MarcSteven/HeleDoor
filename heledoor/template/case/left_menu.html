@@ -1,0 +1,11 @@
+{{ define "left_menu" }}
+
+<div class="left-menu">
+    <ul class="ul-left-menu">
+        <li><a class="{{ if eq .action "" }} active {{ end }}" href="/{{ .controller }}.html"><div>工程案例</div></a></li>
+        <li><a class="{{ if eq .action "international" }} active {{ end }}" href="/{{ .controller }}/international.html"><div>国际合作</div></a></li>
+        <li><a class="{{ if eq .action "national" }} active {{ end }}" href="/{{ .controller }}/national.html"><div>国内合作</div></a></li>
+    </ul>
+</div>
+
+{{ end }}

@@ -1,0 +1,45 @@
+{{ define "main_panel" }}
+
+<div class="carousel-single"><img src="{{ .static }}/img/adv_2.jpg"/></div>
+
+<div class="container">
+
+{{ template "left_menu" . }}
+
+    <div class="main-panel">
+        <h1 class="content-title">企业新闻</h1>
+
+        <ul class="ul-line">
+            <li><a class="top-news" href="/articles/detail.html?cid={{ .data.cid }}&aid=1" title="热烈祝贺：和乐门业第三届全国招商会圆满举行！">
+
+                <small>2016-09-12</small>
+                <h2>热烈祝贺：和乐门业第三届全国招商会圆满举行！</h2>
+                <p>热烈欢迎青白江区区委书记到和乐门业参观2016年2月25日，成都市青白江区区委书记莅临我公司位于成都市青白江区的工业生产基地现场参观考察，并就青白江区生产基地门产品的研发生产能力、管理情况及进一步的.....详细>></p>
+            </a></li>
+            <li><a class="top-news" href="/articles/detail.html?cid={{ .data.cid }}&aid=2" title="热烈祝贺：热烈祝贺：兄弟企业合扬门业仁寿店盛大开业！">
+
+                <small>2017-09-12</small>
+                <h2>热烈祝贺：兄弟企业合扬门业仁寿店盛大开业！</h2>
+                <p>经过精心的筹划，漫长的等待，合扬门业仁寿店终于于2017年9月8日盛大开业了！一顿鸣炮奏乐之后，合扬门业崔总上台致辞，表示对新店的开业信心满满！醒狮点睛仪式：寓意虎虎生威，事业兴旺，吉祥如意，宏图大.....详细>></p>
+            </a></li>
+            <li><a class="top-news" href="/articles/detail.html?cid={{ .data.cid }}&aid=3" title="热烈庆祝：和乐门业中标“地产50强”正荣地产防火门集采项目！">
+
+                <small>2017-09-11</small>
+                <h2>热烈庆祝：和乐门业中标“地产50强”正荣地产防火门集采项目！</h2>
+                <p>热烈祝贺和乐门业成功中标正荣地产中部区域防火门区域战采工程项目！此次全国百强房企前50强的正荣地产与和乐门业达成长期的友好合作，高度肯定与认可了和乐门业的全产业链技术和规模优势！正荣地产作为正荣集团.....详细>></p>
+            </a></li>
+            <li><a class="top-news" href="/articles/detail.html?cid={{ .data.cid }}&aid=4" title="优质地产供应商和乐门业，受邀出席“第九届中国房地产科学发展论坛”！">
+
+                <small>2017-07-18</small>
+                <h2>优质地产供应商和乐门业，受邀出席“第九届中国房地产科学发展论坛”！</h2>
+                <p>近日，第九届中国房地产科学发展论坛在成都成功举办。来自全国1000多位房地产企业、中介企业、设计施工单位、建筑部品企业、金融机构、科研机构的代表，围绕深化房地产供给侧结构性改革，提高供给质量，满足多.....详细>></p>
+            </a></li>
+        </ul>
+
+
+
+    </div>
+    <div class="clear"></div>
+</div>
+
+{{ end }}

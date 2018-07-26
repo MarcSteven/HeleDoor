@@ -1,0 +1,25 @@
+{{ define "header" }}
+<header>
+    <div id="header-top">
+        <div class="container">
+            <div class="company-name fl">你好，欢迎来到和乐门业官网！</div>
+            <div class="company-contact fr"><i class="mui-icon mui-icon-phone-filled"></i><span>咨询电话：400-848-8481</span><i class="mui-icon mui-icon-qq"></i><span>028-66315219</span></div>
+        </div>
+    </div>
+    <div id="header-menu">
+        <div class="container">
+            <div class="company-logo fl"><a href="/"><img src="{{ .static }}/img/logo.jpg"/></a></div>
+            <div class="big-menu fr tar">
+                <a class="{{ if eq .controller "index"}} active {{end}}" href="/">
+                    <span>网站首页</span><span>HOME</span></a><a class="{{ if eq .controller "about"}} active {{end}}" href="/about.html">
+                <span>关于我们</span><span>ABOUT</span></a><a class="{{ if eq .controller "articles"}} active {{end}}" href="/articles.html">
+                <span>公司新闻</span><span>NEWS</span></a><a class="{{ if eq .controller "products"}} active {{end}}" href="/products.html">
+                <span>公司产品</span><span>PRODUCTS</span></a><a class="{{ if eq .controller "hr"}} active {{end}}" href="/hr.html">
+                <span>人力资源</span><span>HR</span></a><a class="{{ if eq .controller "support"}} active {{end}}" href="/support.html">
+                <span>技术支持</span><span>SUPPORT</span></a><a class="{{ if eq .controller "case"}} active {{end}}" href="/case.html">
+                <span>商务合作</span><span>BUSINESS</span></a>
+            </div>
+        </div>
+    </div>
+</header>
+{{ end }}

@@ -1,0 +1,38 @@
+{{ define "main_panel" }}
+
+<div class="carousel-single"><img src="{{ .static }}/img/adv_1.jpg"/></div>
+
+<div class="container">
+
+{{ template "left_menu" . }}
+
+    <div class="main-panel">
+        <h1 class="content-title">荣誉证书</h1>
+        <ul class="ul-block3 ul-cert">
+            <li>
+                <div class="title">质量管理体系认证证书ISO9001(2008)</div>
+                <div class="photo"><a href="#"><img src="{{ .static }}/img/cert_1.jpg"/></a></div>
+                <div class="view"><a class="btn" href="#"><span class="mui-icon mui-icon-search"></span><span>查看详情</span></a></div>
+            </li>
+            <li>
+                <div class="title">装甲防盗安全门(甲级)检测报告</div>
+                <div class="photo"><a href="#"><img src="{{ .static }}/img/cert_2.jpg"/></a></div>
+                <div class="view"><a class="btn" href="#"><span class="mui-icon mui-icon-search"></span><span>查看详情</span></a></div>
+            </li>
+            <li>
+                <div class="title">中国环境标志产品认证证书</div>
+                <div class="photo"><a href="#"><img src="{{ .static }}/img/cert_3.jpg"/></a></div>
+                <div class="view"><a class="btn" href="#"><span class="mui-icon mui-icon-search"></span><span>查看详情</span></a></div>
+            </li>
+            <li>
+                <div class="title">保温门检测报告</div>
+                <div class="photo"><a href="#"><img src="{{ .static }}/img/cert_4.jpg"/></a></div>
+                <div class="view"><a class="btn" href="#"><span class="mui-icon mui-icon-search"></span><span>查看详情</span></a></div>
+            </li>
+            <dl class="clear"></dl>
+        </ul>
+    </div>
+    <div class="clear"></div>
+</div>
+
+{{ end }}

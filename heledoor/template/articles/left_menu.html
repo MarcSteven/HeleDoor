@@ -1,0 +1,14 @@
+{{ define "left_menu" }}
+
+<div class="left-menu">
+    <ul class="ul-left-menu">
+        <li><a class="{{ if eq .data.cid 0 }} active {{ end }}" href="/{{ .controller }}.html"><div>公司新闻</div></a></li>
+        <li><a class="{{ if eq .data.cid 1 }} active {{ end }}" href="/{{ .controller }}/category.html?cid=1"><div>企业新闻</div></a></li>
+        <li><a class="{{ if eq .data.cid 2 }} active {{ end }}" href="/{{ .controller }}/category.html?cid=2"><div>员工活动</div></a></li>
+        <li><a class="{{ if eq .data.cid 3 }} active {{ end }}" href="/{{ .controller }}/category.html?cid=3"><div>和乐内参</div></a></li>
+        <li><a class="{{ if eq .data.cid 4 }} active {{ end }}" href="/{{ .controller }}/category.html?cid=4"><div>最新动态</div></a></li>
+        <li><a class="{{ if eq .data.cid 5 }} active {{ end }}" href="/{{ .controller }}/category.html?cid=5"><div>行业动态</div></a></li>
+    </ul>
+</div>
+
+{{ end }}

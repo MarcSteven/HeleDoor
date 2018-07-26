@@ -1,0 +1,13 @@
+{{ define "left_menu" }}
+
+<div class="left-menu">
+    <ul class="ul-left-menu">
+        <li><a class="{{ if eq .action ""}} active {{ end }}" href="/{{ .controller }}.html"><div>关于我们</div></a></li>
+        <li><a class="{{ if eq .action "culture"}} active {{ end }}" href="/{{ .controller }}/culture.html"><div>企业文化</div></a></li>
+        <li><a class="{{ if eq .action "credentials"}} active {{ end }}" href="/{{ .controller }}/credentials.html"><div>荣誉证书</div></a></li>
+        <li><a class="{{ if eq .action "cert"}} active {{ end }}" href="/{{ .controller }}/cert.html"><div>资质证书</div></a></li>
+        <li><a class="{{ if eq .action "leader"}} active {{ end }}" href="/{{ .controller }}/leader.html"><div>领导关怀</div></a></li>
+    </ul>
+</div>
+
+{{ end }}
